@@ -1,1 +1,90 @@
+/*
+Name: Andy Fernandez
+Date: 02/14/2026
+File Name: styles.css
+*/
 
+/* CSS Reset removes default browser spacing and formatting */
+body, header, nav, main, footer, h1, h2, h3, p, ul, li, img, a, div, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Makes images responsive */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    background-color: #333333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Class Selector Example */
+.link {
+    color: blue;
+}
+
+/* ID Selector Example */
+#profile {
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+/* High Contrast Heading Styles */
+h1, h2 {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+/* Paragraph Spacing */
+p {
+    margin-bottom: 15px;
+}
+
+/* Section Container Styling */
+#about-info, #contact-info {
+    margin-top: 20px;
+}
