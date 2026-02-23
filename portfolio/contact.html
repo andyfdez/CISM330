@@ -2,7 +2,7 @@
 <!--
 Student Name: Andy Fernandez
 File Name: contact.html
-Date: 02/14/2026
+Date: 02/22/2026
 -->
 <html lang="en">
 
@@ -15,42 +15,55 @@ Date: 02/14/2026
 <body>
 
 <header>
-    <img id="profile" src="images/andyfernandez.jpg" alt="Photo of Andy Fernandez">
-    <h1>Contact Information</h1>
+    <figure>
+        <img id="profile" src="images/andyfernandez.jpg" alt="Photo of Andy Fernandez">
+        <figcaption>Building technology solutions that support people and organizations</figcaption>
+    </figure>
+    <h1 class="shadow-text">Contact Information</h1>
 </header>
 
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
 <main>
-    <div id="contact-info">
 
-        <p>Email: <a class="link" href="mailto:afernandez0117584@students.point.edu">afernandez0117584@students.point.edu</a></p>
-        <p>University: Point University</p>
+    <section id="contact-info">
 
-        <h2>Campus Location</h2>
+        <article class="shadow-box">
+            <p>Email:
+                <a class="link" href="mailto:afernandez0117584@students.point.edu">
+                    afernandez0117584@students.point.edu
+                </a>
+            </p>
 
-        <iframe
-            src="https://www.google.com/maps?q=Point+University&output=embed"
-            width="400"
-            height="300"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            title="Point University Google Map">
-        </iframe>
+            <p>University: Point University</p>
+        </article>
 
-    </div>
+        <aside class="shadow-box">
+            <h2>Campus Location</h2>
+
+            <iframe
+                src="https://www.google.com/maps?q=Point+University&output=embed"
+                width="100%"
+                height="300"
+                style="border:0;"
+                loading="lazy"
+                title="Point University Google Map">
+            </iframe>
+        </aside>
+
+    </section>
+
 </main>
 
 <footer>
-    <p>
-        Contact me at:
+    <p>Contact me at:
         <a href="mailto:afernandez0117584@students.point.edu">
             afernandez0117584@students.point.edu
         </a>
