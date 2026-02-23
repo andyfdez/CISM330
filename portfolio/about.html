@@ -2,7 +2,7 @@
 <!--
 Student Name: Andy Fernandez
 File Name: about.html
-Date: 02/14/2026
+Date: 02/22/2026
 -->
 <html lang="en">
 
@@ -15,51 +15,61 @@ Date: 02/14/2026
 <body>
 
 <header>
-    <img id="profile" src="images/andyfernandez.jpg" alt="Photo of Andy Fernandez">
-    <h1>About Me</h1>
+    <figure>
+        <img id="profile" src="images/andyfernandez.jpg" alt="Photo of Andy Fernandez">
+        <figcaption>Building technology solutions that support people and organizations</figcaption>
+    </figure>
+    <h1 class="shadow-text">About Me</h1>
 </header>
 
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
 <main>
-    <div id="about-info">
 
-        <p>
-            I am a Computer Information Technology student with a concentration in Network Administration.
-            I enjoy building structured systems and learning how technology solves real world problems.
-        </p>
+    <section id="about-info">
+
+        <article class="shadow-box">
+            <p>
+                I am a Computer Information Technology student with a concentration in
+                Network Administration. I enjoy developing structured and efficient systems
+                that solve practical problems.
+            </p>
+        </article>
 
         <h2>Technical Interests</h2>
 
-        <dl>
-            <dt>Network Administration</dt>
-            <dd>Managing and maintaining network infrastructure and services.</dd>
+        <article class="shadow-box">
+            <dl>
+                <dt>Network Administration</dt>
+                <dd>Managing network infrastructure and directory services.</dd>
 
-            <dt>Database Design</dt>
-            <dd>Creating structured and efficient relational database systems.</dd>
+                <dt>Database Design</dt>
+                <dd>Designing normalized relational databases using SQL.</dd>
 
-            <dt>Active Directory Management</dt>
-            <dd>Administering user accounts, groups, and domain resources.</dd>
+                <dt>Active Directory</dt>
+                <dd>Managing users, groups, and domain security policies.</dd>
 
-            <dt>Cybersecurity Fundamentals</dt>
-            <dd>Learning methods to protect systems and data from threats.</dd>
+                <dt>Cybersecurity Fundamentals</dt>
+                <dd>Understanding risk mitigation and system protection strategies.</dd>
 
-            <dt>Web Development</dt>
-            <dd>Designing and building functional and accessible websites.</dd>
-        </dl>
+                <dt>Web Development</dt>
+                <dd>Building accessible and structured websites using modern HTML and CSS.</dd>
+            </dl>
+        </article>
 
-    </div>
+    </section>
+
 </main>
 
 <footer>
-    <p>
-        Contact me at:
+    <p>Email:
         <a href="mailto:afernandez0117584@students.point.edu">
             afernandez0117584@students.point.edu
         </a>
