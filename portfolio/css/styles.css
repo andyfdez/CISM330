@@ -1,23 +1,24 @@
 /*
 Name: Andy Fernandez
-Date: 02/14/2026
+Date: 02/22/2026
 File Name: styles.css
 */
 
-/* CSS Reset removes default browser spacing and formatting */
-body, header, nav, main, footer, h1, h2, h3, p, ul, li, img, a, div, dl, dt, dd {
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, p, ul, li, img, a, dl, dt, dd,
+article, section, aside, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Makes images responsive */
+/* Responsive Images */
 img {
     max-width: 100%;
     display: block;
 }
 
-/* Header Styles */
+/* Header */
 header {
     background-color: #000000;
     color: #ffffff;
@@ -25,7 +26,18 @@ header {
     padding: 20px;
 }
 
-/* Navigation Styles */
+/* Figure and Caption */
+figure {
+    margin: 0 auto;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Navigation */
 nav ul {
     list-style-type: none;
     background-color: #333333;
@@ -45,7 +57,7 @@ nav a {
     font-weight: bold;
 }
 
-/* Main Content Styles */
+/* Main Content */
 main {
     padding: 20px;
     font-family: Verdana, Geneva, sans-serif;
@@ -53,7 +65,7 @@ main {
     color: #000000;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
     background-color: #000000;
     color: #ffffff;
@@ -61,18 +73,13 @@ footer {
     padding: 15px;
 }
 
-/* Class Selector Example */
-.link {
-    color: blue;
-}
-
-/* ID Selector Example */
+/* Profile Image */
 #profile {
     border-radius: 12px;
     margin: 0 auto;
 }
 
-/* High Contrast Heading Styles */
+/* Headings */
 h1, h2 {
     color: #000000;
     background-color: #ffffff;
@@ -84,7 +91,33 @@ p {
     margin-bottom: 15px;
 }
 
-/* Section Container Styling */
-#about-info, #contact-info {
-    margin-top: 20px;
+/* Link Styling */
+.link {
+    color: blue;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Tablet and Larger */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Box Shadow */
+.shadow-box {
+    padding: 15px;
+    border: 1px solid #cccccc;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Shadow */
+.shadow-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
