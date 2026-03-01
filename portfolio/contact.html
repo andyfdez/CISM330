@@ -2,7 +2,7 @@
 <!--
 Student Name: Andy Fernandez
 File Name: contact.html
-Date: 02/22/2026
+Date: 03/01/2026
 -->
 <html lang="en">
 
@@ -19,7 +19,7 @@ Date: 02/22/2026
         <img id="profile" src="images/andyfernandez.jpg" alt="Photo of Andy Fernandez">
         <figcaption>Building technology solutions that support people and organizations</figcaption>
     </figure>
-    <h1 class="shadow-text">Contact Information</h1>
+    <h1 class="shadow-text">Contact Me</h1>
 </header>
 
 <nav>
@@ -36,13 +36,33 @@ Date: 02/22/2026
     <section id="contact-info">
 
         <article class="shadow-box">
-            <p>Email:
-                <a class="link" href="mailto:afernandez0117584@students.point.edu">
-                    afernandez0117584@students.point.edu
-                </a>
-            </p>
+            <h2>Send Me a Message</h2>
 
-            <p>University: Point University</p>
+            <form action="#" method="post">
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="interest">Area of Interest</label>
+                <select id="interest" name="interest">
+                    <option value="networking">Networking</option>
+                    <option value="database">Database Design</option>
+                    <option value="web">Web Development</option>
+                    <option value="security">Cybersecurity</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
         </article>
 
         <aside class="shadow-box">
@@ -63,7 +83,7 @@ Date: 02/22/2026
 </main>
 
 <footer>
-    <p>Contact me at:
+    <p>Email:
         <a href="mailto:afernandez0117584@students.point.edu">
             afernandez0117584@students.point.edu
         </a>
