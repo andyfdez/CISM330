@@ -1,123 +1,143 @@
 /*
-Name: Andy Fernandez
-Date: 02/22/2026
-File Name: styles.css
+Andy Fernandez
+Portfolio Stylesheet
 */
 
-/* CSS Reset */
-body, header, nav, main, footer, h1, h2, h3, p, ul, li, img, a, dl, dt, dd,
-article, section, aside, figure, figcaption {
-    margin: 0;
-    padding: 0;
-    border: 0;
+/* RESET */
+
+body, header, nav, main, footer, h1, h2, h3, p, ul, li, img, a,
+article, section, aside, figure, figcaption, table, th, td {
+margin:0;
+padding:0;
+border:0;
 }
 
-/* Responsive Images */
-img {
-    max-width: 100%;
-    display: block;
+/* BODY */
+
+body{
+font-family: Verdana, Geneva, sans-serif;
+line-height:1.6;
+background:#ffffff;
+color:#222;
 }
 
-/* Header */
-header {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
+/* HEADER */
+
+header{
+background:#000;
+color:#fff;
+text-align:center;
+padding:20px;
 }
 
-/* Figure and Caption */
-figure {
-    margin: 0 auto;
-    text-align: center;
+#profile{
+width:200px;
+border-radius:12px;
+margin:auto;
 }
 
-figcaption {
-    font-style: italic;
-    margin-top: 10px;
+/* NAV */
+
+nav ul{
+list-style:none;
+background:#333;
+text-align:center;
+padding:10px;
 }
 
-/* Navigation */
-nav ul {
-    list-style-type: none;
-    background-color: #333333;
-    text-align: center;
-    padding: 10px;
+nav li{
+display:inline-block;
+margin:10px;
 }
 
-nav li {
-    display: inline-block;
-    margin: 10px;
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+/* MAIN */
+
+main{
+padding:20px;
 }
 
-/* Main Content */
-main {
-    padding: 20px;
-    font-family: Verdana, Geneva, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+/* GRID */
+
+.grid-container{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
 }
 
-/* Footer */
-footer {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px;
+@media (min-width:768px){
+.grid-container{
+grid-template-columns:1fr 1fr;
+}
 }
 
-/* Profile Image */
-#profile {
-    border-radius: 12px;
-    margin: 0 auto;
+/* BOXES */
+
+.shadow-box{
+padding:15px;
+border:1px solid #ccc;
+box-shadow:4px 4px 10px rgba(0,0,0,0.3);
+margin-bottom:20px;
 }
 
-/* Headings */
-h1, h2 {
-    color: #000000;
-    background-color: #ffffff;
-    padding: 5px;
+.shadow-text{
+text-shadow:2px 2px 4px rgba(0,0,0,0.4);
 }
 
-/* Paragraph Spacing */
-p {
-    margin-bottom: 15px;
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
 }
 
-/* Link Styling */
-.link {
-    color: blue;
+th, td{
+border:1px solid #999;
+padding:10px;
+text-align:left;
 }
 
-/* Grid Layout */
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+th{
+background:#eee;
 }
 
-/* Tablet and Larger */
-@media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
-    }
+/* FORM */
+
+input, textarea, select{
+display:block;
+width:100%;
+margin-bottom:15px;
+padding:8px;
 }
 
-/* Box Shadow */
-.shadow-box {
-    padding: 15px;
-    border: 1px solid #cccccc;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+/* FOOTER */
+
+footer{
+background:#000;
+color:#fff;
+text-align:center;
+padding:20px;
 }
 
-/* Text Shadow */
-.shadow-text {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+/* SOCIAL ICONS */
+
+.social-icons{
+margin-bottom:10px;
+}
+
+.social-icons img{
+width:32px;
+margin:0 10px;
+}
+
+/* ACCESSIBILITY */
+
+a:focus{
+outline:3px solid yellow;
 }
